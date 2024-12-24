@@ -1,11 +1,10 @@
 export const userSchema = {
     name: "",
     email: "",
-    age: Number
+    age: null
 }
 
 export function Schema( schema, data ) {
-    console
     const result = { ...schema };
     for (const key in schema) {
       if (data[key] !== undefined) {
